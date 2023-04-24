@@ -28,11 +28,11 @@ df_dolar = spark.createDataFrame(df)
 
 def writeAzureSQLDB(df1, table_write):
         
-    jdbcHostname = 'sql-estudo.database.windows.net'
-    jdbcDatabase = 'db-estudos'
+    jdbcHostname = ''
+    jdbcDatabase = ''
     jdbcPort = '1433'
-    jdbcUsername = 'admin-azure@sql-estudo' #jdbcUsername = dbutils.secrets.get("", "")
-    jdbcPassword = 'a&Ehs&HB'               #jdbcPassword = dbutils.secrets.get(scope = "", key = "")
+    jdbcUsername = '' #jdbcUsername = dbutils.secrets.get("", "")
+    jdbcPassword = ''               #jdbcPassword = dbutils.secrets.get(scope = "", key = "")
     
     jdbcUrl = f'jdbc:sqlserver://{jdbcHostname}:{jdbcPort};database={jdbcDatabase}'
         
