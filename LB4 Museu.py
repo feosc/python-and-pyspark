@@ -7,11 +7,11 @@ from pyspark.sql.functions import *
 
 #Conectando no Blob
 
-container = 'wasbs://felipe-coelho@stgestudos.blob.core.windows.net/'
+container = 'CONTAINER'
 
 def connect_to_blob():
     #Sem KeyVault por motivos de configuração
-    storage_account_access_key = 'LZtcOrTCuH88dGWTvRBFnq0g6DJnAFcvigqTlU2wI0b2qfpfl4kB2W0u/QxajuW1Z1lJ967qGWjN+ASthdLetw=='
+    storage_account_access_key = 'KEY'
     spark.conf.set("fs.azure.account.key.stgestudos.blob.core.windows.net", storage_account_access_key)
        
 connect_to_blob()
