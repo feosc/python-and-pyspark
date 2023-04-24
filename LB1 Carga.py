@@ -1,8 +1,8 @@
 # Databricks notebook source
 #Localizando o StorageAccount que desejo ler, com a senha de acesso e formato do arquivo
 
-storage_account_name = 'stgestudos'
-storage_account_access_key = 'j+Ji7MO3YLhkwCarp8OCzbgy2ENitNs09cF8Sm2q2IU1UZGo82VKSmuVXidZeUEn4/ljKtItIB1ZW6JVd1YAuQ=='
+storage_account_name = 'STORAGE'
+storage_account_access_key = 'key'
 
 file_location = f"wasbs://felipe-coelho@{storage_account_name}.blob.core.windows.net/"
 file_type = "csv"
